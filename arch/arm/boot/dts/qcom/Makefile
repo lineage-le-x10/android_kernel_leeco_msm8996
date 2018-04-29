@@ -27,7 +27,7 @@ endif
 
 ifeq ($(CONFIG_PRODUCT_LE_X10),y)
 dtb-$(CONFIG_ARCH_MSM8996) += \
-	msm8996pro-pmi8996-le_x10-evt.dts
+	msm8996pro-pmi8996-le_x10-evt.dtb
 endif
 
 ifeq ($(CONFIG_PRODUCT_LE_ZL1),y)
