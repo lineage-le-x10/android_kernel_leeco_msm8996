@@ -441,22 +441,6 @@
 &pmi8994_haptics {
 	status = "disabled";
 };
-
-&i2c_9 {
-	drv2604l@5a {
-		status = "ok";
-		compatible = "ti,drv2604l";
-		reg = <0x5a>;
-		input-mode = <1>;
-		loop-mode = <1>;
-		rtp-format = <0>;
-		actuator-type = <1>;
-		frequency = <200>;
-		vib-rated-mv = <1600>;
-		vib-overdrive-mv = <2600>;
-		enable-gpio = <&tlmm 38 0>;
-	};
-};
 /*haptics end*/
 
 /{
@@ -472,12 +456,6 @@
 	qcom,usb-thermal-mitigation = <3000 2000 1000 0>;
 	qcom,fastchg-current-comp = <1200>;
 	qcom,float-voltage-comp = <16>;
-};
-
-&uartblsp2dm1 {
-        pinctrl-names = "default", "sleep";
-        pinctrl-0 = <&uart_console_active>;
-        pinctrl-1 = <&uart_console_sleep>;
 };
 
 &qusb_phy0 {
